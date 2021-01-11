@@ -8,18 +8,18 @@
 
   <js-module src="www/queueit.js" name="queueit">
     <runs/>
-    <clobbers target="QueueItEngine" />
+    <clobbers target="QueueIt" />
   </js-module>
 
   <!-- android -->
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="QueueItEngine" >
-        <param name="android-package" value="com.queueit.QueueItEngine"/>
+      <feature name="QueueIt" >
+        <param name="android-package" value="com.queueit.QueueIt"/>
       </feature>
     </config-file>
     <framework src="com.queue_it.androidsdk:library:2.0.28"/>
-    <source-file src="src/android/QueueItEngine.java" target-dir="src/com/queueit" />
+    <source-file src="src/android/QueueIt.java" target-dir="src/com/queueit" />
   </platform>
 
   <!-- ios -->

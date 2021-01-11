@@ -1,4 +1,4 @@
-interface QueueItEngine {
+interface QueueIt {
     run(customerId: string,
         eventOrAliasId: string,
         layoutName?: string,

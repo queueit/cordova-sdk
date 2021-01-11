@@ -1,7 +1,7 @@
 {
     "version": "0.0.0",
     "name": "cordova-queue-it",
-    "cordova_name": "QueueItEngine",
+    "cordova_name": "QueueIt",
     "description": "Cordova plugin for Queue-It",
     "license": "MIT",
     "types": "types/index.d.ts",

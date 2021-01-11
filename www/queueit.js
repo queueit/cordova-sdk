@@ -1,9 +1,9 @@
-﻿const PLUGIN_NAME = 'QueueItEngine'
+﻿const PLUGIN_NAME = 'QueueIt'
 const exec = require('cordova/exec');
 
-function QueueItEngine() {}
+function QueueIt() {}
 
-QueueItEngine.prototype.enableTesting = function (value) {
+QueueIt.enableTesting = function (value) {
     exec(function () {
         }, function () {
         },
@@ -12,7 +12,7 @@ QueueItEngine.prototype.enableTesting = function (value) {
         [value]);
 }
 
-QueueItEngine.prototype.run = function (customerId, eventOrAliasId, layoutName, language, clearCache, successCallback) {
+QueueIt.run = function (customerId, eventOrAliasId, layoutName, language, clearCache, successCallback) {
     exec(successCallback, function () {
         console.log('Error while running queue-it engine', JSON.stringify(arguments))
     }, PLUGIN_NAME, 'runAsync', [
@@ -24,4 +24,4 @@ QueueItEngine.prototype.run = function (customerId, eventOrAliasId, layoutName, 
     ]);
 };
 
-module.exports = QueueItEngine;
+module.exports = QueueIt;

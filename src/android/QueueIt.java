@@ -19,7 +19,7 @@ enum EnqueueResultState {
     Passed, Disabled, Unavailable, ViewWillOpen, CloseClicked
 }
 
-public class QueueItEngine extends CordovaPlugin {
+public class QueueIt extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
@@ -35,8 +35,8 @@ public class QueueItEngine extends CordovaPlugin {
     private PluginResult getRunResultObject(String queueItToken, EnqueueResultState state) {
         JSONObject obj = new JSONObject();
         try {
-            obj.put("queueittoken", queueItToken);
-            obj.put("state", state.toString());
+            obj.put("QueueITToken", queueItToken);
+            obj.put("State", state.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -48,8 +48,8 @@ public class QueueItEngine extends CordovaPlugin {
     private JSONObject getErrorObject(Error err, String errorMessage) {
         JSONObject obj = new JSONObject();
         try {
-            obj.put("error", err.toString());
-            obj.put("message", errorMessage);
+            obj.put("Error", err.toString());
+            obj.put("Message", errorMessage);
         } catch (JSONException e) {
             e.printStackTrace();
         }
