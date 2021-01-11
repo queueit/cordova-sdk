@@ -41,7 +41,7 @@ function enqueue(){
     var waitingRoomId = "waitingRoom";
     var layoutName = null;
     var language = null;
-    var clearCache = false; // Use `true` here if you want to reset his position.
+    var clearCache = false; // Use `true` here if you want to reset the user's position when queueing.
 
     QueueIt.run(customerId, waitingRoomId, layoutName, language, clearCache, function(result){
         console.log("QueueIt run result", JSON.stringify(result));
