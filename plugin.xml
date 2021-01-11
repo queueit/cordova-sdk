@@ -25,12 +25,21 @@
   <!-- ios -->
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
-      <feature name="Template">
-        <param name="ios-package" value="CPTemplate" />
+      <feature name="QueueIt">
+        <param name="ios-package" value="CPQueueIt" />
       </feature>
     </config-file>
-    <header-file src="src/ios/CPTemplate.h" />
-    <source-file src="src/ios/CPTemplate.m" />
+    <podspec>
+      <config>
+        <source url="https://github.com/brightcove/BrightcoveSpecs.git" />
+        <source url="https://github.com/CocoaPods/Specs.git"/>
+      </config>
+      <pods use-frameworks="true">
+        <pod name="QueueITLibrary" spec="~> 3.0.4" />
+      </pods>
+    </podspec>
+    <header-file src="src/ios/CPQueueIt.h" />
+    <source-file src="src/ios/CPQueueIt.m" />
   </platform>
 
 </plugin>

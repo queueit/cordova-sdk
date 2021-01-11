@@ -13,8 +13,8 @@ document.addEventListener('deviceready', function onDeviceReady() {
 // In all these cases is most likely a misconfiguration of the queue settings:
 // Invalid customer ID, event alias ID or cname setting on queue (GO Queue-it portal -> event settings).
 function enqueue(){
-    var customerId = "vavaprod";
-    var waitingRoomId = "q1";
+    var customerId = "customer";
+    var waitingRoomId = "eventOrAlias";
     var layoutName = null;
     var language = null;
     var clearCache = false;
