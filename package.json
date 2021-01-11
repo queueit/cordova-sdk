@@ -1,0 +1,48 @@
+{
+    "version": "0.0.0",
+    "name": "cordova-queue-it",
+    "cordova_name": "QueueItEngine",
+    "description": "Cordova plugin for Queue-It",
+    "license": "MIT",
+    "types": "types/index.d.ts",
+    "cordova": {
+        "id": "cordova-queue-it",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "author": {
+        "name": "Vasil Vasilev",
+        "email": "vava@queue-it.net"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hirtenfelder/cordova-plugin-template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hirtenfelder/cordova-plugin-template/issues"
+    },
+    "scripts": {
+        "test": "npm run lint",
+        "lint": "eslint ."
+    },
+    "devDependencies": {
+        "@cordova/eslint-config": "^3.0.0"
+    },
+    "engines": {
+        "cordovaDependencies": {
+            "3.0.0": {
+                "cordova": ">=9"
+            },
+            "4.0.0": {
+                "cordova": ">100"
+            }
+        }
+    },
+    "keywords": [
+        "queue-it",
+        "plugin",
+        "template"
+    ]
+}

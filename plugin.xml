@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-queue-it" version="0.0.1">
+  <name>Template</name>
+  <description>Queue-It Cordova Plugin</description>
+  <license>MIT</license>
+  <keywords>queue-it, cordova, plugin</keywords>
+
+  <js-module src="www/queueit.js" name="queueit">
+    <runs/>
+    <clobbers target="QueueItEngine" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="QueueItEngine" >
+        <param name="android-package" value="com.queueit.QueueItEngine"/>
+      </feature>
+    </config-file>
+    <framework src="com.queue_it.androidsdk:library:2.0.28"/>
+    <source-file src="src/android/QueueItEngine.java" target-dir="src/com/queueit" />
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Template">
+        <param name="ios-package" value="CPTemplate" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CPTemplate.h" />
+    <source-file src="src/ios/CPTemplate.m" />
+  </platform>
+
+</plugin>
