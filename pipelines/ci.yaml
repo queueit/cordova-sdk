@@ -32,4 +32,4 @@ jobs:
       - task: CmdLine@2
         displayName: Build example project for Android
         inputs:
-          script: 'cd example; cordova build android'
+          script: 'cd example; cordova prepare android && cordova build android'
