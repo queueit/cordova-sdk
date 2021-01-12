@@ -33,15 +33,3 @@ jobs:
         displayName: Prepare the example project for build
         inputs:
           script: 'cd example; cordova prepare android'
-
-      - task: Gradle@2
-        displayName: Build example android project
-        inputs:
-          cwd: example/platforms/android
-          tasks: 'build'
-          publishJUnitResults: true
-          testResultsFiles: '**/TEST-*.xml'
-          javaHomeOption: 'JDKVersion'
-          jdkVersionOption: '1.8'
-          gradleOptions: '-Xmx3072m'
-          sonarQubeRunAnalysis: false
