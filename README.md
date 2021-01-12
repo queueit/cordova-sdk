@@ -1,6 +1,6 @@
-﻿# cordova-queue-it
+﻿# cordova-sdk
 
-Cordova plugin for integration Queue-it's virtual waiting room into Cordova/Ionic apps.
+Cordova plugin for integrating Queue-it's virtual waiting room into Cordova/Ionic apps.
 
 ## Sample app
 
@@ -13,7 +13,7 @@ a successful integration.
 
 You can use the [Cordova CLI](https://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html) to install the plugin:
 ```bash
-cordova plugin add https://github.com/queueit/cordova-queue-it.git
+cordova plugin add https://github.com/queueit/cordova-sdk.git
 ```
 
 This plugin adds a new Android Activity so you might need to add it to your manifest.

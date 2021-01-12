@@ -1,12 +1,12 @@
 {
-    "version": "0.0.0",
-    "name": "cordova-queue-it",
+    "version": "0.1.0",
+    "name": "cordova-sdk",
     "cordova_name": "QueueIt",
     "description": "Cordova plugin for Queue-It",
     "license": "MIT",
     "types": "types/index.d.ts",
     "cordova": {
-        "id": "cordova-queue-it",
+        "id": "cordova-sdk",
         "platforms": [
             "android",
             "ios"
@@ -25,7 +25,9 @@
     },
     "scripts": {
         "test": "npm run lint",
-        "lint": "eslint ."
+        "lint": "eslint .",
+        "build-android": "cordova build android",
+        "build-ios": "cordova build ios"
     },
     "devDependencies": {
         "@cordova/eslint-config": "^3.0.0"

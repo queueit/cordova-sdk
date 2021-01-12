@@ -1,0 +1,37 @@
+variables:
+  BuildConfiguration: Debug
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: step-templates
+
+trigger:
+  - master
+
+
+jobs:
+  - job: Build
+    displayName: Lint and build
+    pool:
+      name: 'Default'
+    steps:
+      - template: templates/node/install-global-npm.yaml@templates
+      - template: templates/node/install-npm.yaml@templates
+      - task: Npm@0
+        displayName: 'install cordova'
+        inputs:
+          arguments: '-g cordova'
+
+      - task: CmdLine@2
+        displayName: Lint code
+        inputs:
+          script: 'npm run lint'
+
+      - task: Npm@1
+        displayName: Build example project for Android
+        inputs:
+          command: custom
+          customCommand: run build-android
+          workingDir: Example
