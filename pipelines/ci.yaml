@@ -34,4 +34,4 @@ jobs:
         inputs:
           command: custom
           customCommand: run build-android
-          workingDir: Example
+          workingDir: example
