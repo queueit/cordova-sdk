@@ -36,8 +36,8 @@ jobs:
 
       - task: Gradle@2
         displayName: Build example android project
-        cwd: example/platforms/android
         inputs:
+          cwd: example/platforms/android
           tasks: 'build'
           publishJUnitResults: true
           testResultsFiles: '**/TEST-*.xml'
