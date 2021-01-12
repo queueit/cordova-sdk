@@ -29,9 +29,7 @@ jobs:
         inputs:
           script: 'npm run lint'
 
-      - task: Npm@1
+      - task: CmdLine@2
         displayName: Build example project for Android
         inputs:
-          command: custom
-          customCommand: run build-android
-          workingDir: example
+          script: 'cd example; cordova build android'

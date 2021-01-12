@@ -25,9 +25,7 @@
     },
     "scripts": {
         "test": "npm run lint",
-        "lint": "eslint .",
-        "build-android": "cordova build android",
-        "build-ios": "cordova build ios"
+        "lint": "eslint ."
     },
     "devDependencies": {
         "@cordova/eslint-config": "^3.0.0"
