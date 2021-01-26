@@ -38,7 +38,7 @@ The callback is called with different states as you can see in the example:
 // Invalid customer ID, event alias ID or cname setting on queue (GO Queue-it portal -> event settings).
 function enqueue(){
     var customerId = "myCustomerId";
-    var waitingRoomId = "waitingRoom";
+    var waitingRoomIdOrAlias = "waitingRoom";
     var layoutName = null;
     var language = null;
     var clearCache = false; // Use `true` here if you want to reset the user's position when queueing.
