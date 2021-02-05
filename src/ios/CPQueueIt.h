@@ -16,7 +16,7 @@ typedef enum {
 
 extern NSString * const EnqueueState_toString[];
 
-@interface CPQueueIt : CDVPlugin
+@interface CPQueueIt : CDVPlugin<QueuePassedDelegate, QueueViewWillOpenDelegate, QueueDisabledDelegate, QueueITUnavailableDelegate, QueueUserExitedDelegate, QueueViewClosedDelegate>
 
 - (void)enableTesting : (CDVInvokedUrlCommand*)command;
 - (void)runAsync : (CDVInvokedUrlCommand*)command;
