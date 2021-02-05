@@ -35,7 +35,7 @@
         <source url="https://github.com/CocoaPods/Specs.git"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="QueueITLibrary" spec="~> 3.0.4" />
+        <pod name="QueueITLibrary" spec="~> 3.0.5" />
       </pods>
     </podspec>
     <header-file src="src/ios/CPQueueIt.h" />
