@@ -82,10 +82,11 @@ NSString * const EnqueueResult_toString[] = {
     }
     NSDictionary *dict = @{
         @"QueueITToken": token,
-        @"State":EnqueueResult_toString[Passed]
+        @"State":EnqueueResult_toString[state]
     };
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary: dict];
     CDVInvokedUrlCommand* command = self.command;
+    [result setKeepCallbackAsBool: YES];
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
 
