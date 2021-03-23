@@ -11,9 +11,14 @@ A sample app project to try out functionality of the library can be found in the
 Before starting please download the whitepaper **Mobile App Integration** from the Go Queue-it Platform. This whitepaper contains the needed information to perform
 a successful integration.
 
-You can use the [Cordova CLI](https://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html) to install the plugin:
+You can install this plugin in the following ways:
+- Using the Github repository:
 ```bash
 cordova plugin add https://github.com/queueit/cordova-sdk.git
+```
+- Using NPM:
+```bash
+cordova plugin add @queue-it/cordova-sdk
 ```
 
 This plugin adds a new Android Activity so you might need to add it to your manifest.
