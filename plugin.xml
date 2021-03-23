@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.4">
-  <name>Template</name>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.5">
+  <name>cordova-sdk</name>
   <description>Queue-It Cordova Plugin</description>
   <license>MIT</license>
   <keywords>queue-it, cordova, plugin</keywords>
