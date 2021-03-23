@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.3">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.4">
   <name>Template</name>
   <description>Queue-It Cordova Plugin</description>
   <license>MIT</license>
@@ -20,6 +20,12 @@
     </config-file>
     <framework src="com.queue_it.androidsdk:library:2.0.32"/>
     <source-file src="src/android/QueueIt.java" target-dir="src/com/queueit" />
+
+    <edit-config file="AndroidManifest.xml"
+                 target="/manifest/application"
+                 mode="merge">
+        <application android:allowBackup="false"/>
+    </edit-config>
   </platform>
 
   <!-- ios -->
