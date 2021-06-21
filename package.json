@@ -1,5 +1,5 @@
 {
-    "version": "0.1.5",
+    "version": "0.1.6",
     "name": "@queue-it/cordova-sdk",
     "cordova_name": "QueueIt",
     "description": "Cordova plugin for Queue-It",

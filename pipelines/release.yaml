@@ -1,0 +1,30 @@
+variables:
+  BuildConfiguration: Debug
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: step-templates
+
+trigger:
+  - master
+
+
+jobs:
+  - job: Release
+    displayName: Release to NPM
+    pool:
+      name: 'Default'
+    steps:
+      - template: templates/node/install-global-npm.yaml@templates
+      - template: templates/node/install-npm.yaml@templates
+      - task: Npm@0
+        displayName: 'install cordova'
+        inputs:
+          arguments: '-g cordova'
+
+      - task: CmdLine@2
+        displayName: Prepare the example project for build
+        inputs:
+          script: 'npm publish --access public'
