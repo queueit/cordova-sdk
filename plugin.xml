@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.6">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.7">
   <name>cordova-sdk</name>
   <description>Queue-It Cordova Plugin</description>
   <license>MIT</license>
@@ -41,7 +41,7 @@
         <source url="https://github.com/CocoaPods/Specs.git"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="QueueITLibrary" spec="~> 3.0.5" />
+        <pod name="QueueITLibrary" spec="3.0.14" />
       </pods>
     </podspec>
     <header-file src="src/ios/CPQueueIt.h" />
