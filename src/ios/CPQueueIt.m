@@ -102,7 +102,7 @@ NSString * const EnqueueResult_toString[] = {
     [self callbackOnSuccess:@"" state:ViewWillOpen];
 }
 
-- (void)notifyQueueDisabled { 
+- (void)notifyQueueDisabled:(QueueDisabledInfo * _Nullable)queueDisabledInfo { 
     [self callbackOnSuccess:@"" state:Disabled];
 }
 
