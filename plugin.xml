@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.7">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.8">
   <name>cordova-sdk</name>
   <description>Queue-It Cordova Plugin</description>
   <license>MIT</license>
@@ -18,7 +18,7 @@
         <param name="android-package" value="com.queueit.QueueIt"/>
       </feature>
     </config-file>
-    <framework src="com.queue_it.androidsdk:library:2.0.34"/>
+    <framework src="com.queue-it.androidsdk:library:2.0.34"/>
     <source-file src="src/android/QueueIt.java" target-dir="src/com/queueit" />
 
     <edit-config file="AndroidManifest.xml"
