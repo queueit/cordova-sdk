@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-sdk" version="0.1.8">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="@queue-it/cordova-sdk" version="0.1.9">
   <name>cordova-sdk</name>
   <description>Queue-It Cordova Plugin</description>
   <license>MIT</license>
