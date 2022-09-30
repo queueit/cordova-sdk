@@ -1,12 +1,12 @@
 {
-    "version": "0.1.8",
+    "version": "0.1.9",
     "name": "@queue-it/cordova-sdk",
     "cordova_name": "QueueIt",
     "description": "Cordova plugin for Queue-It",
     "license": "MIT",
     "types": "types/index.d.ts",
     "cordova": {
-        "id": "cordova-sdk",
+        "id": "@queue-it/cordova-sdk",
         "platforms": [
             "android",
             "ios"
