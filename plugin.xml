@@ -11,6 +11,13 @@
     <clobbers target="QueueIt" />
   </js-module>
 
+  <!--  resolve conflicts with other Cordova plugins by putting this part outside of <platform>-->
+  <edit-config file="app/src/main/AndroidManifest.xml"
+               target="/manifest/application"
+               mode="merge">
+    <application android:allowBackup="false"/>
+  </edit-config>
+
   <!-- android -->
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
@@ -20,12 +27,6 @@
     </config-file>
     <framework src="com.queue-it.androidsdk:library:2.0.34"/>
     <source-file src="src/android/QueueIt.java" target-dir="src/com/queueit" />
-
-    <edit-config file="AndroidManifest.xml"
-                 target="/manifest/application"
-                 mode="merge">
-        <application android:allowBackup="false"/>
-    </edit-config>
   </platform>
 
   <!-- ios -->
